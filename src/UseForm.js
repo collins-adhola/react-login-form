@@ -2,7 +2,11 @@ import { Button, Alert } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 
+
+
 function UseForm() {
+
+
   const [email, setEmail] = useState(" ");
   const [password, setPassword] = useState(" ");
   const [emailError, setEmailError] = useState(" ");
@@ -40,7 +44,7 @@ function UseForm() {
   };
 
   return (
-    <div>
+    <div styles={{margin:'auto', padding:"70px"}}>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
